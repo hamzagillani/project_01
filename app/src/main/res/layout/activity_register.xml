@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activites.RegisterActivity"
+    android:padding="16dp"
+    android:background="#ffffff">
+
+
+
+    <ImageView
+        android:id="@+id/add_a_photo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/add_a_photo_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:maxWidth="4dp"/>
+    <EditText
+        android:id="@+id/username_id"
+        android:hint="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_a_photo_id"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/reg_edittext_style"/>
+
+    <EditText
+        android:id="@+id/email_id"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_id"
+        android:background="@drawable/reg_edittext_style" />
+    <EditText
+        android:id="@+id/pass1_id"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_id"
+        android:background="@drawable/reg_edittext_style"/>
+    <EditText
+        android:id="@+id/pass2_id"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass1_id"
+        android:background="@drawable/reg_edittext_style"/>
+
+    <Button
+        android:id="@+id/register_id"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pass2_id"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/reg_btn_style"
+        android:text="Register"
+        android:textColor="#ffffff" />
+
+    <ProgressBar
+        android:id="@+id/reg_progressbar_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pass2_id"
+        android:layout_marginTop="30dp"/>
+
+
+</RelativeLayout>
+
+
+
+
+
